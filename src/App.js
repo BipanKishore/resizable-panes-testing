@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { ResizablePanes, Pane } from 'resizable-panes-react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+
+      <div className='h-40 bg-gray-200'>
+        <ResizablePanes
+          uniqueId="visibility-doc3"
+          unit="ratio"
         >
-          Learn React
-        </a>
-      </header>
+          <Pane className='bg-red-500' id='P2-P0' minSize={1} size={2}></Pane>
+          <Pane className='bg-green-500' id='P2-P1' minSize={1} size={4}> </Pane>
+        </ResizablePanes>
+      </div>
+
     </div>
   );
 }
