@@ -25,5 +25,5 @@ name: Cypress Cloud
 
       - name: Build
         run: |
-          npm run prod
+          npm run build
 
