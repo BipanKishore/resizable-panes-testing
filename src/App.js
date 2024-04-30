@@ -1,11 +1,25 @@
-import { ResizablePanes, Pane } from 'resizable-panes-react'
+import { ResizablePanes, Pane } from 'resizable-panes-react/lib/cjs/index.cjs'
+// import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+
+
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div className='' >
+{/* <div>
+<Sidebar>
+  <Menu>
+    <SubMenu label="Charts">
+      <MenuItem> Pie charts </MenuItem>
+      <MenuItem> Line charts </MenuItem>
+    </SubMenu>
+    <MenuItem> Documentation </MenuItem>
+    <MenuItem> Calendar </MenuItem>
+  </Menu>
+</Sidebar>
+</div> */}
+
+{/* <Testtt /> */}
 
       <div className='h-40 bg-gray-200'>
         <ResizablePanes
